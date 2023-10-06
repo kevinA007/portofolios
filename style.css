@@ -1,0 +1,161 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: monospace;
+  background-image: url(img/giphy.gif);
+  text-shadow: 5px 5px 5px 10px;
+}
+
+.jumbotron .layar {
+  margin-top: -75px;
+  margin-bottom: -20px;
+}
+
+#about {
+  margin-top: -50px;
+  margin-bottom: 300px;
+}
+
+#about .container {
+  padding-bottom: 250px;
+}
+
+#projects {
+  background-color: #bcffe5;
+  background-image: url(img/giphy.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -500px;
+}
+
+#contact .container {
+  margin-top: -50px;
+}
+
+footer {
+  background-color: #00ffff;
+  color: white;
+}
+
+footer p {
+  margin-top: -5px;
+}
+
+.container {
+  margin-top: -5px;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+}
+
+/* PARALAX */
+.jumbotron img.shadow {
+  transition: transform 0.4s ease-out;
+  position: relative;
+  z-index: 9;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.projects img {
+  transition: transform 0.4s ease-out;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card {
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+/* END PARALLAX */
+
+/* FLICKERING NAME */
+.jumbotron .kevin {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+.container .kevin {
+  text-shadow: 0 0 5px rgba(67, 232, 216, 1), 0 0 10px rgba(67, 232, 216, 1),
+    0 0 20px rgba(67, 232, 216, 1), 0 0 40px rgba(67, 232, 216, 1);
+  animation: neon-shine 2s linear infinite;
+}
+h1 {
+  font-size: 4.2rem;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 40px rgb(96, 255, 247), 0 0 80px rgb(255, 255, 255),
+      0 0 90px rgb(255, 255, 255), 0 0 100px rgb(0, 0, 0),
+      0 0 150px rgb(97, 223, 255);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+@keyframes flicker2 {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #000000, 0 0 19px #fff,
+      0 0 40px rgb(0, 0, 0), 0 0 80px rgb(255, 255, 255),
+      0 0 90px rgb(255, 255, 255), 0 0 100px rgb(0, 0, 0),
+      0 0 150px rgb(0, 0, 0);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes neon-shine {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    color: #232323;
+  }
+}
